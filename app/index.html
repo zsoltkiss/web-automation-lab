@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo – Automation Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Todo lista</h1>
+
+        <form id="todo-form">
+            <input
+                type="text"
+                id="todo-input"
+                placeholder="Új feladat..."
+                autocomplete="off"
+            >
+            <button type="submit" id="add-button">Hozzáadás</button>
+        </form>
+
+        <p id="error-message" role="alert"></p>
+
+        <ul id="todo-list"></ul>
+
+        <p id="empty-message">Még nincs feladatod.</p>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
