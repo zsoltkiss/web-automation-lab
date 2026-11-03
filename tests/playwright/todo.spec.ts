@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 test('Todo application should load correctly', async ({ page }) => {
     await page.goto('/');
 
-    await expect(page).toHaveTitle('Todo – This is wrong');
+    await expect(page).toHaveTitle('Todo – Automation Lab');
 
     await expect(
         page.getByRole('heading', { name: 'Todo lista' })
