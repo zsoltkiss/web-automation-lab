@@ -112,7 +112,7 @@ test('User should be able to delete a todo', async ({ page }) => {
 
     // Az üres lista üzenetének újra meg kell jelennie.
     await expect(
-        page.getByText('Még nincs feladatod.')
+        page.getByText('Törölted az összes feladatod.')
     ).toBeVisible();
 });
 
